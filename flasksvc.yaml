@@ -8,5 +8,5 @@ spec:
     image: hvdrk0/flaskapp:latest
     ports:
     - containerPort: 5000
-  # imagePullSecrets:
-  # - name: docker-pull-secret
+  imagePullSecrets:
+  - name: docker-pull-secret
