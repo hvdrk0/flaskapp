@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: flaskpod
+  name: flaskpod1
   labels:
-    app: flaskapp
+    app: flaskapp2
 spec:
   containers:
-  - name: flaskapp
+  - name: flaskapp3
     image: hvdrk0/flaskapp:latest
     ports:
     - containerPort: 5000
