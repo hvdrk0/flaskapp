@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: flaskpod4
-  # labels:
-  #   app: flaskapp5
+  labels:
+    app: flaskapp5
 spec:
   containers:
   - name: flaskapp6
