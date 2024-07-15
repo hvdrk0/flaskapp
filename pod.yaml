@@ -1,11 +1,12 @@
 apiVersion: v1
-kind: Service
+kind: Pod
 metadata:
-  name: flasksvc
+  name: flaskpod
 spec:
-  type: NodePort
-  ports:
-  - port: 5000
-    protocol: TCP
-  selector:
-    app: flaskapp
+  containers:
+  - name: flaskapp
+    image: hvdrk0/flaskapp:latest
+    ports:
+    - containerPort: 5000
+  # imagePullSecrets:
+  # - name: docker-pull-secret
